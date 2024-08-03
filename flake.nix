@@ -33,6 +33,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Be able to run external binaries
+    nix-alien.url = "github:thiagokokada/nix-alien";
+
+    # flake utilities
     flake-utils.url = "github:numtide/flake-utils";
 
     # compatibility layer

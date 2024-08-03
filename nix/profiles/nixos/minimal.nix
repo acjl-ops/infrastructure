@@ -9,6 +9,8 @@
     ./../../modules/nixos/fonts.nix
     ./../../modules/nixos/users.nix
 
+    ./../../modules/nixos/external-binaries.nix
+
     ./../../modules/nixos/firmware.nix
     ./../../modules/nixos/security.nix
     ./../../modules/nixos/appimage.nix

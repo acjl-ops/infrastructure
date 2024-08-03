@@ -2,26 +2,15 @@
   with lib;
 {
   config = mkIf (builtins.elem "input" config.sanix.hardware) {
-      environment.systemPackages = with pkgs;
-        [
-          virt-manager
-          spice
-          spice-vdagent
-        ];
+      # Keychron firmware is stupid and exports the keyboard as an Apple keyboard,
+      # even on Windows/Android mode.
+      boot.kernelModules = [ "hid-apple" ];
+      # add it to initrd too
+      boot.initrd.kernelModules = [ "hid-apple" ];
 
-      virtualisation.spiceUSBRedirection.enable = true;
-
-      virtualisation.libvirtd = {
-        enable = true;
-        qemu = {
-          package = pkgs.qemu_kvm;
-          runAsRoot = true;
-          swtpm.enable = true;
-          ovmf = {
-            enable = true;
-            packages = [pkgs.OVMF.fd];
-          };
-        };
-      };
+      boot.kernelParams = [
+        # Keychron firmware is very stupid and requires this to be set
+        "hid_apple.fnmode=2" "hid_apple.swap_opt_cmd=1"
+      ];
   };
 }
