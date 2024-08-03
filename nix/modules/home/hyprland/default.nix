@@ -3,7 +3,14 @@
 {
   # dependency scripts
   home.file."${config.xdg.configHome}/hypr/scripts/focusworkspace.sh".source =
-    ./focusworkspace.sh;
+    ./../../../../dots/wm-hyprland/focusworkspace.sh;
 
-  wayland.windowManager.hyprland.extraConfig = lib.fileContents ./hyprland.conf;
+  wayland.windowManager.hyprland.extraConfig = lib.fileContents ./../../../../dots/wm-hyprland/hyprland.conf;
+
+  home.packages = with pkgs;
+    [
+      wofi
+      kitty
+      nautilus
+    ];
 }

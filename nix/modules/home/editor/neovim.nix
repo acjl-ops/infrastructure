@@ -31,20 +31,20 @@
 
   # for vim
   home.file.".vim/autoload/lightline/colorscheme/simple.vim".source =
-    ./.vim/autoload/lightline/colorscheme/simple.vim;
+    ./../../../../dots/core/.vim/autoload/lightline/colorscheme/simple.vim;
   home.file.".vim/colors/simple.vim".source =
-    ./.vim/colors/simple.vim;
+    ./../../../../dots/core/.vim/colors/simple.vim;
 
   # for neovim
   home.file."${config.xdg.configHome}/nvim/autoload/lightline/colorscheme/simple.vim".source =
-    ./.vim/autoload/lightline/colorscheme/simple.vim;
+    ./../../../../dots/core/.vim/autoload/lightline/colorscheme/simple.vim;
   home.file."${config.xdg.configHome}/nvim/colors/simple.vim".source =
-    ./.vim/colors/simple.vim;
+    ./../../../../dots/core/.vim/colors/simple.vim;
 
   programs.neovim = {
     enable = true;
     package = pkgs.neovim-unwrapped;
-    extraConfig = lib.fileContents ./.vimrc;
+    extraConfig = lib.fileContents ./../../../../dots/core/.vimrc;
     extraLuaConfig = lib.fileContents ./nvim/init.lua;
 
     plugins = with pkgs.vimPlugins; [
