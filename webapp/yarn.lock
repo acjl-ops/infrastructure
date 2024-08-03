@@ -2034,10 +2034,10 @@ vite-plugin-eslint@^1.8.1:
     "@types/eslint" "^8.4.5"
     rollup "^2.77.2"
 
-vite-plugin-manifest-sri@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-manifest-sri/-/vite-plugin-manifest-sri-0.1.0.tgz#e2b9d0cebf7c7c307cee8aab3a8b3cf604bca921"
-  integrity sha512-m4gcEXwcA1MfCVYTLVHYsB03Xsc6L4VYfhxXmcYcS+rN3kTjuWkXMaA8OuOV1gFdi1bMJFkLTJCPciYApvCm/g==
+vite-plugin-manifest-sri@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-manifest-sri/-/vite-plugin-manifest-sri-0.2.0.tgz#cb1cfd11692ee81f5d1194926cbea6d3a38b8599"
+  integrity sha512-Zt5jt19xTIJ91LOuQTCtNG7rTFc5OziAjBz2H5NdCGqaOD1nxrWExLhcKW+W4/q8/jOPCg/n5ncYEQmqCxiGQQ==
 
 vite@^4.4.9:
   version "4.5.3"
