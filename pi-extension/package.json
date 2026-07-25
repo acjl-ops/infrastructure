@@ -3,7 +3,7 @@
     "@anthropic-ai/sandbox-runtime": "0.0.26",
     "@earendil-works/pi-agent-core": "^0.79.1",
     "@earendil-works/pi-ai": "^0.79.1",
-    "@earendil-works/pi-coding-agent": "^0.79.1",
+    "@earendil-works/pi-coding-agent": "^0.80.2",
     "@earendil-works/pi-tui": "^0.79.1"
   },
   "name": "pi-devtty63-extension",
