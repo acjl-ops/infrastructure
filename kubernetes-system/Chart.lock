@@ -13,6 +13,6 @@ dependencies:
   version: 84.5.0
 - name: headscale-operator
   repository: oci://ghcr.io/infradohq/headscale-operator/charts
-  version: 0.4.0
-digest: sha256:ffcfdede0264b84498cc8f739ff438be3b1684a575cfebf6cdda89d610231781
-generated: "2026-05-20T18:36:29.876951736Z"
+  version: 0.5.0
+digest: sha256:6300b82c3ee392f9a318e40c4d744c2e2ae65301e5dca0fe59afbd6d6889c13d
+generated: "2026-06-22T12:45:32.101186475Z"
