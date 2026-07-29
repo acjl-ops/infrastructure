@@ -38,7 +38,7 @@ jobs:
           keep-outputs = true
 
     - name: Restore and cache Nix store
-      uses: nix-community/cache-nix-action@v4
+      uses: nix-community/cache-nix-action@v5
       with:
         key: nixcache-${{ hashFiles('**/*.nix') }}
         restore-keys: |
