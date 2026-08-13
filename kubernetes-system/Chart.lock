@@ -7,12 +7,12 @@ dependencies:
   version: 0.36.0
 - name: ingress-anubis
   repository: oci://ghcr.io/jaredallard/helm-charts
-  version: 1.10.5
+  version: 1.10.8
 - name: kube-prometheus-stack
   repository: https://prometheus-community.github.io/helm-charts
   version: 84.5.0
 - name: headscale-operator
   repository: oci://ghcr.io/infradohq/headscale-operator/charts
   version: 0.4.0
-digest: sha256:ffcfdede0264b84498cc8f739ff438be3b1684a575cfebf6cdda89d610231781
-generated: "2026-05-20T18:36:29.876951736Z"
+digest: sha256:18446dd2f15b44d886f471534d84790e8fc7f1ee29bb4362c78cd94c25648e43
+generated: "2026-08-13T12:43:57.682445828Z"
